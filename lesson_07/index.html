@@ -25,7 +25,7 @@
             <p><button id="rosewood">rosewood</button></p>
             <p><button id="beech">Beech</button></p>
             <p><button id="treelol">TreeLol</button></p>
-
+            <p><button id="maple">Maple</button></p>
 
         </div>
         <div class="content">
@@ -40,7 +40,7 @@
                 
             </iframe>
         </div>
-
+        
     </div>
 
 
@@ -59,8 +59,17 @@
 });
 
         })
-        $("#beech").click(function(){
 
+        $("#maple").click(function(){
+            $("#i_content").attr("src","maple_content.html");
+            $("#i_summary").attr("src","maple_summary.html");
+          })
+
+        $("#pine").click(function(){
+            $("#i_content").attr("src","pine_content.html");
+            $("#i_summary").attr("src","pine_summary.html");
+        })
+        $("#beech").click(function(){
 
         })
 

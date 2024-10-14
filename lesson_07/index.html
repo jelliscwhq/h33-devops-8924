@@ -22,19 +22,22 @@
 
         <div class="index">
             <h3>Index</h3>
-            <p><button id="oak">Oak</button></p>
+            <p><button id="rosewood">rosewood</button></p>
             <p><button id="beech">Beech</button></p>
+            <p><button id="treelol">TreeLol</button></p>
             <p><button id="maple">Maple</button></p>
 
         </div>
         <div class="content">
-            <iframe id="i_content" src="oak_content.html"
+            <iframe id="i_content" src="rosewood_content.html"
                     width="1000px" 
                     >
             </iframe>
         </div>
         <div class="summary">
-            <iframe  id="i_summary" src="oak_summary.html">
+            <iframe  id="i_summary" src="rosewood_summary.html">
+
+                
             </iframe>
         </div>
         
@@ -49,6 +52,12 @@
         $("#oak").click(function(){
             $("#i_content").attr("src","oak_content.html");
             $("#i_summary").attr("src","oak_summary.html");
+
+            $("#treelol").click(function(){
+            $("#i_content").attr("src", "treelol_content.html");
+            $("#i_summary").attr("src", "treelol_summary.html");
+});
+
         })
 
         $("#maple").click(function(){

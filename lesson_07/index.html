@@ -24,6 +24,8 @@
             <h3>Index</h3>
             <p><button id="rosewood">rosewood</button></p>
             <p><button id="beech">Beech</button></p>
+            <p><button id="treelol">TreeLol</button></p>
+
 
         </div>
         <div class="content">
@@ -34,6 +36,8 @@
         </div>
         <div class="summary">
             <iframe  id="i_summary" src="rosewood_summary.html">
+
+                
             </iframe>
         </div>
 
@@ -48,6 +52,12 @@
         $("#oak").click(function(){
             $("#i_content").attr("src","oak_content.html");
             $("#i_summary").attr("src","oak_summary.html");
+
+            $("#treelol").click(function(){
+            $("#i_content").attr("src", "treelol_content.html");
+            $("#i_summary").attr("src", "treelol_summary.html");
+});
+
         })
         $("#beech").click(function(){
 
